@@ -10,5 +10,8 @@
   "dependencies": {
     "@specter-bridge/core": "0.1.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
