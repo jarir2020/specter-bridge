@@ -4,7 +4,7 @@
   "description": "CLI for creating and building Specter Bridge apps",
   "type": "module",
   "bin": {
-    "specter": "./src/index.js"
+    "specter": "src/index.js"
   },
   "files": [
     "src",
