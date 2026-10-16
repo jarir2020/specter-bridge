@@ -1,0 +1,14 @@
+{
+  "name": "@specter-bridge/plugin-storage",
+  "version": "0.1.0",
+  "description": "JSON key/value storage plugin for Specter Bridge",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "@specter-bridge/core": "0.1.0"
+  },
+  "license": "MIT"
+}

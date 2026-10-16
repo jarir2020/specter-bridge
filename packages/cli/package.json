@@ -1,0 +1,17 @@
+{
+  "name": "@specter-bridge/cli",
+  "version": "0.1.0",
+  "description": "CLI for creating and building Specter Bridge apps",
+  "type": "module",
+  "bin": {
+    "specter": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

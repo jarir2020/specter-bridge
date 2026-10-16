@@ -1,0 +1,30 @@
+# Specter Bridge
+
+> Android-first native runtime and app tooling for web applications.
+
+Specter Bridge serves a web app from an Android WebView and exposes explicitly registered native plugins through a request/response protocol. Ghost.js can build the web UI, while Specter Bridge supplies the Android host.
+
+## Start here
+
+- [README](README.md): current scope, requirements, quick start, and JavaScript API.
+- [Architecture](docs/architecture.md): protocol, Android host, WebView security, Storage, and current limits.
+- [CLI guide](docs/cli.md): `init`, `add`, `sync`, `build`, and `run` commands.
+- [Ghost.js integration](docs/ghostjs-integration.md): use Ghost's mobile output as the Specter app's `webDir`.
+
+## Packages
+
+- `packages/core`: request IDs, timeouts, protocol handling, and plugin registration.
+- `packages/plugin-storage`: browser fallback and Android app-private JSON storage API.
+- `packages/cli`: project generator, Android template, asset sync, APK build, and install/run commands.
+
+## Common commands
+
+- `npm run specter -- init "My App" --app-id com.example.myapp`: create a starter app.
+- `npx specter add android`: add the native Android project.
+- `npx specter sync android`: copy the configured web output into the APK assets.
+- `npx specter build android`: build a debug APK.
+- `npx specter run android`: install and launch on one connected device or emulator.
+
+## Current limits
+
+Android is the only native host. iOS, permissions, camera/location, event messaging, and lifecycle APIs are not implemented. Storage is not encrypted. Native calls are restricted to the local asset origin and main frame.
